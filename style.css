@@ -1,0 +1,330 @@
+* {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      background-color: #fafafa;
+}
+
+body {
+      width: 1440px;
+      margin: 0 auto;
+      height: 100vh;
+}
+
+/* ------------------ NAV ------------------ */
+header {
+      height: 70px;
+      width: 1440px;
+}
+
+.nav__header {
+      width: 100%;
+      height: 70px;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 1rem;
+}
+
+/* ------------- IZQUIERDA ------------- */
+#left__nav {
+      width: 720px;
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      gap: 5rem;
+      align-items: center;
+      padding-left: 2rem;
+}
+
+.snap__icon{
+      display: flex;
+      width: 90px;
+}
+
+.snap__icon > img {
+      height: 100%;
+      width: 100%;
+}
+
+/* ------------- MENÚ DESPLEGABLE ------------- */
+#ul__nav{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      font-family: 'Epilogue', sans-serif;
+      font-size: 16px;              
+      color: hsl(0, 0%, 41%);
+      list-style: none;
+      font-weight: 500;
+}
+
+.list__item{
+      cursor: pointer;
+}
+
+/* ---------- DESPLEGABLE 1 ---------- */
+/* ---------- CONTAINER MENÚ ABSOLUTE ---------- */
+#text__click1:hover{
+      color: #e3ce3e;
+}
+
+#text__click1.activo{
+      color: black;
+      transition: 2s;
+}
+
+#container__show-features{
+      max-height: 0;
+      width: 170px;
+
+      position: absolute;
+      top: 2.5rem;
+      left: -5rem;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
+      border-radius: 10px;
+      background-color: white;
+      list-style: none;
+
+      transition-property: max-height, box-shadow, padding;
+      transition-duration: .5s;
+}
+
+#container__show-features.activo{
+      max-height: 300px;
+
+      padding: 37px 0;
+      box-shadow: 1px 1px 20px #00000030;
+}
+
+#arrow__down1{
+      transition: .5s ease;
+}
+
+#arrow__down1.activo{
+      transform: scaleY(-1);
+}
+
+.img-span > span:hover {
+      color: black;
+}
+
+/* ---------- LISTA MENÚ ABSOLUTE ---------- */
+.list__show{
+      overflow: hidden;
+      background-color: transparent;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.3rem;
+      margin: 0 auto;
+
+      list-style: none;
+}
+
+.list__inside{
+      display: block;
+      width: 100%;
+      background-color: transparent;
+}
+
+.img-span{
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      background-color: transparent;
+      width: 100%;
+}
+
+.icon__list{
+      background-color: transparent;
+      width: 16px;
+      margin-right: 10px;
+}
+
+.img-span > span{
+      background-color: transparent;
+}
+
+/* ---------- DESPLEGABLE 2 ---------- */
+#text__click2:hover{
+      color: #e3ce3e;
+}
+
+#text__click2.activo{
+      color: black;
+      transition: 2s;
+}
+
+#container__show--company{
+      max-height: 0;
+      width: 132px;
+      position: absolute;
+      top: 2.5rem;
+      left: 8rem;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
+      border-radius: 10px;
+      background-color: white;
+      list-style: none;
+
+      transition-property: max-height, box-shadow, padding;
+      transition-duration: .5s;
+}
+
+#container__show--company.activo{
+      max-height: 300px;
+
+      padding: 30px 0;
+      box-shadow: 1px 1px 20px #00000030;
+}
+
+#arrow__down2{
+      transition: .5s ease;
+}
+
+#arrow__down2.activo{
+      transform: scaleY(-1);
+}
+
+.list__show > li:hover {
+      color: black;
+      background-color: hsla(0, 2%, 25%, 0.192);
+      border-radius: 2px;
+
+}
+
+#list__item--click3:hover{
+      color: #e3ce3e;
+}
+
+
+/* ------------- DERECHA ------------- */
+#right__nav {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 3rem;
+      padding-right: 3rem;
+      font-weight: 500;
+}
+
+#right__nav > a {
+      font-family: 'Epilogue', sans-serif;
+      font-size: 16px;
+      text-decoration: none;
+      color: hsl(0, 0%, 41%);
+}
+
+#register__button {
+      font-family: 'Epilogue', sans-serif;
+      font-size: 16px;
+      color: hsl(0, 0%, 41%);
+      border-color: hsl(0, 0%, 41%);
+      border-radius: 13px;
+      width: 108px;
+      height: 45px;
+      cursor: pointer;
+}
+
+#register__button:hover {
+      background-color: hsl(0, 0%, 8%);
+      color: #fafafa;
+}
+
+/* ------------------ MAIN CONTAINER ------------------ */
+main {
+      display: flex;
+      width: 1440px;
+      height: 900px;
+}
+
+
+/* ------------------ SECTION/LEFT__CONTAINER ------------------ */
+.left__container {
+      width: 720px;
+      height: 900px;
+      display: flex;
+      flex-direction: column;
+      gap: 7rem;
+      padding: 176px 0 20px 160px;
+}
+
+/* ------------- ARRIBA ------------- */
+.text__container {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      /* outline: 2px solid; */
+}
+
+.text__container > h1 {
+      font-family: 'Epilogue', sans-serif;
+      font-size: 85px;
+      color: hsl(0, 0%, 8%);
+      font-weight: 700;
+}
+
+.text__container > p {
+      font-family: 'Epilogue', sans-serif;
+      font-size: 18px;
+      color: hsl(0, 0%, 41%);
+      font-weight: 500;
+      line-height: 1.5;
+      width: 470px;
+}
+
+.text__container > button {
+      background-color: hsl(0, 0%, 8%);
+      color: white;
+      cursor: pointer;
+      width: 160px;
+      height: 55px;
+      border-radius: 15px;
+      font-family: 'Epilogue', sans-serif;
+      font-size: 18px;
+      border: 1px solid hsl(0, 0%, 8%);
+}
+
+.text__container > button:hover {
+      background-color: transparent;
+      color: hsl(0, 0%, 8%);
+}
+/* ------------- ABAJO ------------- */
+.img__container {
+      display: flex;
+      gap: 3rem;
+      height: 45px;
+}
+
+.img__container > img {
+      object-fit: scale-down;
+}
+
+/* ------------------ ASIDE/RIGHT__CONTAINER ------------------ */
+.right__container {
+      width: 720px;
+      height: 900px;
+      padding: 106px;
+      background-color: transparent;
+      object-fit: contain;
+}
+
+.right__container > img {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      bottom: 2.5rem;
+}
